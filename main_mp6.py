@@ -44,3 +44,19 @@ class UserPredictor:
         
         return finished_data
         
+# Example usage
+if __name__ == "__main__":
+    # Load your data
+    train_users = pd.read_csv('path_to_train_users.csv')
+    train_logs = pd.read_csv('path_to_train_logs.csv')
+    train_clicked = pd.read_csv('path_to_train_clicked.csv')
+
+    # Initialize and fit the model
+    predictor = UserPredictor()
+    predictor.fit(train_users, train_logs, train_clicked)
+
+    # Make predictions
+    test_users = pd.read_csv('path_to_test_users.csv')
+    test_logs = pd.read_csv('path_to_test_logs.csv')
+    predictions = predictor.predict(test_users, test_logs)
+    print(predictions)
