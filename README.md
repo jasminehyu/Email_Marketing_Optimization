@@ -29,7 +29,7 @@ The dataset consists of user information, webpage visit logs, and email click da
 
 4. Run the classifier:
    ```bash
-   python main.py
+   python main_mp6.py
 ## Example
 ```bash
 import pandas as pd
@@ -50,5 +50,6 @@ test_logs = pd.read_csv('path_to_test_logs.csv')
 predictions = predictor.predict(test_users, test_logs)
 print(predictions)
 
-##Contact
+```
+## Contact
 If you have any questions, please contact Jasmine Yu at jasmineyuhhy@gmail.com.
