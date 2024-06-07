@@ -31,6 +31,7 @@ The dataset consists of user information, webpage visit logs, and email click da
    ```bash
    python main.py
 ## Example
+```bash
 import pandas as pd
 from main_mp6 import UserPredictor
 
