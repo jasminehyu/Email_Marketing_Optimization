@@ -19,4 +19,35 @@ The dataset consists of user information, webpage visit logs, and email click da
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/jasminehyu/Project_ML_sale.git
+2. Navigate to the project directory:
+   ```bash
+   cd Project_ML_sale
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+4. Run the classifier:
+   ```bash
+   python main.py
+## Example
+import pandas as pd
+from main_mp6 import UserPredictor
+
+# Load your data
+train_users = pd.read_csv('path_to_train_users.csv')
+train_logs = pd.read_csv('path_to_train_logs.csv')
+train_clicked = pd.read_csv('path_to_train_clicked.csv')
+
+# Initialize and fit the model
+predictor = UserPredictor()
+predictor.fit(train_users, train_logs, train_clicked)
+
+# Make predictions
+test_users = pd.read_csv('path_to_test_users.csv')
+test_logs = pd.read_csv('path_to_test_logs.csv')
+predictions = predictor.predict(test_users, test_logs)
+print(predictions)
+
+##Contact
+If you have any questions, please contact Jasmine Yu at jasmineyuhhy@gmail.com.
