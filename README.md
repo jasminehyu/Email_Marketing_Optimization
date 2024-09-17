@@ -1,5 +1,5 @@
 # Smart Marketing for TV Sales
-![email](./images.jpg)
+![email](./image.jpg)
 ## Overview
 This project aims to optimize email marketing for TV promotions on a retail website. By analyzing past user interactions with similar promotional emails, we can predict which users are likely to be interested in upcoming promotions, thus minimizing unwanted emails and improving user experience.
 
