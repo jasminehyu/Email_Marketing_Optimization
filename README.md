@@ -3,6 +3,11 @@
 ## Overview
 This project aims to optimize email marketing for TV promotions on a retail website. By analyzing past user interactions with similar promotional emails, we can predict which users are likely to be interested in upcoming promotions, thus minimizing unwanted emails and improving user experience.
 
+## Tools
+- Pandas
+- NumPy
+- Scikit-Learn(LogisticRegression, Pipeline, PolynomialFeatures, StandardScaler, cross_val_score)
+
 ## Features
 - Predict user interest based on historical data.
 - Utilizes logistic regression with polynomial features and standard scaling.
